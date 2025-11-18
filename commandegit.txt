@@ -24,9 +24,10 @@ II Récupérer les changements (sur l’autre PC)
 
 "git pull"
 
-
-
 ______________
 une fois par pc ça clone tous le dossier sur un pc
 Premier clonage sur un nouveau PC === git clone
 https://github.com/Maskario/Dossier-Dev-MMI-2025-2026.git
+
+
+test : hello word
