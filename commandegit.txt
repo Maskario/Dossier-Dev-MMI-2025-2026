@@ -1,0 +1,32 @@
+COMMANDES GIT POUR SYNCHRONISER ENTRE PLUSIEURS PC :
+
+I Sauvegarder vos changements (la où tu travaille)
+
+1. Ajouter :
+
+les fichiers : "git add ." 
+(pour ajouter tous les fichiers que tu à modifier ) 
+
+2.  Faire un commit : 
+commit : "git commit -m “Description des modifications”"
+  
+(le commit est le message qui permet de confirmé et justifier les dossiers modifier qu'on veut ajouter, tu dois donc précisé via une description de ce que tu à ajouter ou modifier)
+
+3.  Envoyer sur GitHub : git push
+
+II Récupérer les changements (sur l’autre PC)
+
+1. Aller dans le dossier du projet :
+
+"cd Dossier-Dev-MMI-2025-2026"
+
+2.  Récupérer les dernières modifications :
+
+"git pull"
+
+
+
+______________
+une fois par pc ça clone tous le dossier sur un pc
+Premier clonage sur un nouveau PC === git clone
+https://github.com/Maskario/Dossier-Dev-MMI-2025-2026.git
