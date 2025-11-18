@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculateur de Remise</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleCalculateurderemise.css">
+</head>
+<body class="d-flex justify-content-center align-items-center vh-100 bg-dark-subtle">
+    <header id="top">
+        <div class="fondcalculateur container p-3 rounded" style="width: 800px;">
+            <h4 class="text-white mb-2">Calculateur de Remise</h4>
+
+            <div class="mt-3"></div>
+
+            <div class="col-12 row g-3">
+                <div class="col-10">
+                    <input type="number" id="Prixdebase" class="form-control text-start mb-2 fs-4 w-100" placeholder="Prix initial du produit">
+                </div>
+            </div>
+
+            <div class="mt-3"></div>
+
+            <div class="col-12 row g-3">
+                <div class="col-10">
+                    <input type="number" id="Pourcentage_de_remise" class="form-control text-start mb-2 fs-4 w-100" placeholder="Pourcentage de remise">
+                </div>
+                <div class="col-2">
+                    <button class="btn btn-success w-100 mb-2 fs-4" onclick="afficherValeurs()()">OK</button>
+                </div>
+            </div>
+
+            <div class="mt-4"></div>
+
+            <h4 class="text-white mb-2">Résultat : </h4>
+
+            <div class="col-12 row justify-content-center">
+                <div class="col-12">
+                    <input type="text" id="result" class="form-control text-end mb-2 fs-4 w-100" disabled>
+                </div>
+            </div>
+
+            <div class="mt-2"></div>
+
+            <div class="col-12 row g-4 justify-content-center">
+                <div class="col-6">
+                    <button class="btn btn-primary w-100 mb-2 fs-4" onclick="calculerPrixAvecRemise()">Calculer</button>
+                </div>
+                <div class="col-6">
+                    <button class="btn btn-danger w-100 mb-2 fs-4 text-center" onclick="clearFields()">Clear</button>
+                </div>   
+            </div>
+        </div>
+    </header>
+    <a href="../index.html#MiniProjet" id="backToTop" class="position-fixed top-0 start-0 m-4 text-white bg-transparent border-0 fs-3" style="box-shadow: none; outline: none;">
+        <i class="flèche bi bi-arrow-left"></i>
+    </a>
+
+</body>
+<script>
+    function afficherValeurs() {
+    // Récupérer les valeurs des champs
+    let prixInitial = document.getElementById("Prixdebase").value;
+    let remise = document.getElementById("Pourcentage_de_remise").value;
+
+    // Afficher les valeurs saisies dans le champ résultat
+        document.getElementById("result").value = `Prix: ${prixInitial} € , Remise: ${remise} %`;
+    }
+
+    //Ensuite on récupère ce qui est afficher dans le résultat pour le calculer
+
+    function calculerPrixAvecRemise() {
+        // Récupérer les valeurs des champs
+        let prixInitial = document.getElementById("Prixdebase").value;
+        let remise = document.getElementById("Pourcentage_de_remise").value;
+
+        // Vérifier si les champs sont remplis
+        if (prixInitial.trim() === "" || remise.trim() === "") {
+            document.getElementById("result").value = "Veuillez saisir des valeurs valides.";
+            return;
+        }
+
+        // Calculer le prix après remise
+        let prixFinal = prixInitial - (prixInitial * remise / 100);
+
+        // Afficher le prix après remise dans le champ résultat
+        document.getElementById("result").value = `Prix après remise : ${prixFinal.toFixed(2)} €`;
+    }
+
+    function clearFields() {
+        document.getElementById("Prixdebase").value = "";
+        document.getElementById("Pourcentage_de_remise").value = "";
+        document.getElementById("result").value = "";
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+    const couleur = localStorage.getItem('couleurTheme') || 'originale';
+    
+    // Ajoute la classe au body pour activer le thème dans le CSS
+    document.body.classList.add(`theme-${couleur}`);
+
+    // image de fond dynamique
+    const bodyImage = `image/Couleur ${couleur}.svg`;
+    document.body.style.background = `url('${bodyImage}') no-repeat center center / cover`;
+    });
+</script>
+</html>

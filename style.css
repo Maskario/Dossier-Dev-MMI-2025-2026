@@ -1,0 +1,51 @@
+body{
+    background-image: url(images/backgroundgreyandblack.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    align-content: center;
+    justify-content: end;
+    font-family: "Convergence", sans-serif;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    margin: 0px;
+    margin-right: 25vh;
+    gap: 20px;
+    padding-inline-start: 0px;
+}
+
+li{
+    margin-top: 15px;
+    text-transform: uppercase;
+}
+
+a{
+    text-decoration: none;
+    color : white ;
+    font-size: xx-large;
+    background-color: #4e4a4a;
+    border-radius: 5px;
+    width: 5em;
+    min-height: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+a:hover{
+    color: black;
+    text-decoration: underline;
+    background-color: white;
+    width: 6em;
+    min-height: 3em;
+}
+

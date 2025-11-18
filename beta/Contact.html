@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Contact.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Gorditas:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+</head>
+<!-- LA COULEUR DE CETTE PAGE SERA EN BLEU -->
+<body>
+
+    <div class="cursor__ball cursor__ball--big">
+        <svg height="50" width="50">
+            <circle cx="25" cy="25" r="20" stroke-width="0"></circle>
+        </svg>
+    </div>
+    <header>
+        <div class="headerposition">
+            <div class="logo_and_text">
+                <img src="images/logotest.svg" alt="image" class="logo">
+                <h1 class="text_du_logo">BlockYourPage</h1>
+            </div>
+            <nav class="les_autres_pages">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="documentation.html">Documentation</a></li>
+                    <li><a href="Contact.html" class="active1">Contact</a></li>
+                    <li><button class="button_dark_mode"><img src="images/Dark_mode.svg" alt="button_dark_mode" class="iconbutton_darkmode"></button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <img src="images/bas.svg" alt="bas">
+    
+    <main>
+        <section class="section-5">
+            <p>
+
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p class="textfooter">
+
+        </p>
+    </footer>
+</body>
+
+
+<script>
+
+    const bigBall = document.querySelector('.cursor__ball--big');
+
+    document.body.addEventListener('mousemove', onMouseMove);
+
+    function onMouseMove(e) {
+        gsap.to(bigBall, {
+            duration: 0.2,
+            x: e.clientX - 25,
+            y: e.clientY - 25
+        });
+    }
+
+    // Animation au clic
+    document.body.addEventListener('mousedown', onMouseDown);
+    document.body.addEventListener('mouseup', onMouseUp);
+
+    // Variable pour sauvegarder l'animation
+    let pulseAnimation;
+
+    // Sauvegarde l'animation de pulsation
+    pulseAnimation = gsap.to(bigBall, {
+        scale: 0.9,
+        duration: 0.5,
+        repeat: -1,
+        yoyo: true,
+        ease: "power1.inOut"
+    });
+
+    function onMouseDown() {
+        pulseAnimation.pause();  // Met en pause la pulsation
+        gsap.to(bigBall, {
+            duration: 0.2,
+            scale: 1.5  // Gonfle au clic
+        });
+    }
+
+    function onMouseUp() {
+        gsap.to(bigBall, {
+            duration: 0.3,
+            scale: 1,  // Revient à la taille normale
+            onComplete: () => {
+                pulseAnimation.play();  // Relance la pulsation
+            }
+        });
+    }
+
+</script>
+
+</html>

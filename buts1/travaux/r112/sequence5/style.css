@@ -1,0 +1,138 @@
+body{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    height:  500px;
+    background-color: #226D68 ;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(images/tree.svg)  ;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 20px rgba(0,0,0,.2)
+
+}
+
+@media (max-width: 480px) {
+header {
+    background-image: none;
+  }
+}
+@media (max-width: 640px) {
+header {
+    background-image: none;
+  }
+}
+@media (max-width: 768px) {
+header {
+    background-image: none;
+  }
+}
+
+.titreheader{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 45px;
+    margin-bottom: 50px;
+}
+
+nav{
+    width: 800px;
+
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0px;
+    gap: 20px;
+    padding-inline-start: 0px;
+}
+
+li{
+    margin-top: 15px;
+    text-transform: uppercase;
+    
+}
+
+a{
+    text-decoration: none;
+    color : white ;
+}
+
+a.active {
+  color: #226D68;
+  background-color: white;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.section_p {
+    margin: 10px;
+}
+
+.sectionText{
+    margin: 10px;
+    width: 760px;
+}
+
+.section_h1{
+    margin: 10px;
+    text-align: center;
+}
+
+.police_h1{
+    font-size: 45px;
+    margin: 0px;
+}
+
+
+footer{
+    background-color: #226D68;
+    padding: 10px;
+    height: 40px;
+    box-shadow: 0 0 20px rgba(0,0,0,.2)
+}
+
+.mentionlégal{
+    color: white;
+    text-align: center;
+}
+
+
+.img_plan_arboretum {
+    box-shadow: 0 0 20px rgba(0,0,0,.2)
+}
+
+.position_img_plan{
+    display: flex;
+    justify-content: center;
+}
+
+.position_googlemap{
+    display: flex;
+    justify-content: center;
+}
+
+.text_Acces{
+    text-align: center;
+}

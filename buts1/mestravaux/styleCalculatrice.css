@@ -1,0 +1,88 @@
+.theme-originale .fondcalculatrice{
+    background-color: #283F5D; 
+    border: 3px solid #223047;
+}
+.theme-originale .titre{
+    color: white;
+}
+
+.theme-bleu .fondcalculatrice{
+    background-color: #85B6CC;
+    border: 3px solid #003366;
+}
+.theme-bleu .titre{
+    color: white;
+}
+
+.theme-gris .fondcalculatrice{
+    background-color: #D2D3D2;
+    border: 3px solid #676666;
+}
+.theme-gris .titre{
+    color: white;
+}
+
+.theme-vert .fondcalculatrice{
+    background-color: #8AC988;
+    border: 3px solid #155A33;
+}
+.theme-vert .titre{
+    color: white;
+}
+
+.theme-rouge .fondcalculatrice{
+    background-color: #E8855E;
+    border: 3px solid #8A0100;
+}
+.theme-rouge .titre{
+    color: white;
+}
+
+.theme-jaune .fondcalculatrice{
+    background-color: #F7D457;
+    border: 3px solid #D4A301;
+}
+.theme-jaune .titre{
+    color: white;
+}
+
+.theme-cyan .fondcalculatrice{
+    background-color: #96D1D0;
+    border: 3px solid #48A3A0;
+}
+.theme-cyan .titre{
+    color: #2C2C2C;
+}
+
+.theme-blanc .fondcalculatrice{
+    background-color: #E7E7E6;
+    border: 3px solid #CFCFCF;
+}
+.theme-blanc .titre{
+    color: #2C2C2C;
+}
+
+.theme-blanc .flèche{
+    color: #2C2C2C;
+  }
+
+.theme-noir .fondcalculatrice{
+    background-color: #262726;
+    border : 3px solid white;
+}
+.theme-noir .titre{
+    color: white;
+}
+
+.theme-noir .bouton_border{
+    border : 3px solid white;
+    border-radius: 10px;
+}
+
+.theme-halloween .fondcalculatrice{
+      background-color:#2E2E2E;
+      border: 10px solid #1F1F25;
+}
+.theme-halloween .titre{
+    color: white;
+}

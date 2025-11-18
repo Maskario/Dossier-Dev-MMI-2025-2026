@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AirSurvol - Réservation de vols</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=B612:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ======= NAVBAR / ENTÊTE ======= -->
+  <header>
+    <nav>
+      <div class="topnav0">
+        <section>
+          <h1 id="logoexemple">AirSurvol</h1>  
+        </section>
+        <section>
+            <label for="search"></label>
+            <input class="inputtopbar" id="search" list="rubriques"></button>
+            <datalist id="rubriques">
+                <option value="Enregistrement">
+                <option value="Mes Réservations">
+                <option value="Informations">
+                <option value="Aide">
+            </datalist>
+            <button class="buttontopbar">Langue</button>
+            <button class="buttontopbar">Se Connecter</button>
+        </section>
+      </div>
+        
+      <div class="topnav">
+        <a class="active" href="#Acheter un billet">Acheter un billet</a>
+        <a href="#Enregistrement">Enregistrement</a>
+        <a href="#Mes Réservations">Mes Réservations</a>
+        <a href="#Informations">Informations</a>
+        <a href="#Aide">Aide</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ======= IMAGE PRINCIPALE ======= -->
+  <section class="imagehotesse">
+    <img src="images/hotesse.jpg" alt="hotesse de l'air">
+  </section>
+
+  <!-- ======= FORMULAIRE DE RÉSERVATION ======= -->
+  <main>
+    <section class="formulaire">
+      
+      <!-- Titre du formulaire -->
+      <div class="top">
+        <div class="lesbox1" id="ticket">
+          <p>Acheter un billet</p>
+        </div>
+      </div>
+
+      <!-- Contenu principal du formulaire -->
+      <div class="bottom">
+
+        <!-- Ligne 1 : type de trajet + départ + arrivée -->
+        <div class="row">
+          <div class="lesbox2">
+            <label for="pays"></label>
+            <select name="pays" id="pays">
+              <option value="Aller-retour">Aller-retour</option>
+              <option value="Aller-simple">Aller-simple</option>
+              <option value="Multidestination">Multidestination</option>
+            </select>
+          </div>
+
+          <div class="lesbox2">
+            <label for="depart"></label>
+            <input list="villes-depart" name="depart" id="depart" placeholder="Départ de">
+            <datalist id="villes-depart">
+                <option value="Paris (Charles-de-Gaulle)">
+                <option value="Paris (Orly)">
+                <option value="Lyon">
+                <option value="Marseille">
+                <option value="Toulouse">
+                <option value="Nice">
+                <option value="Bordeaux">
+                <option value="Nantes">
+                <option value="Lille">
+                <option value="Strasbourg">
+            </datalist>
+          </div>
+
+          <div class="lesbox2">
+            <label for="arrivee"></label>
+            <input list="villes-arrivee" name="arrivee" id="arrivee" placeholder="Arrivée à">
+            <datalist id="villes-arrivee">
+                <option value="Londres (Royaume-Uni)">
+                <option value="Rome (Italie)">
+                <option value="New York (États-Unis)">
+                <option value="Montréal (Canada)">
+                <option value="Mexico (Mexique)">
+                <option value="Rio de Janeiro (Brésil)">
+                <option value="Casablanca (Maroc)">
+                <option value="Alger (Algérie)">
+                <option value="Hong Kong (Chine)">
+                <option value="Tokyo (Japon)">
+                <option value="Séoul (Corée du Sud)">
+            </datalist>
+          </div>
+        </div>
+
+        <!-- Ligne 2 : date + passager + classe -->
+        <div class="row">
+          <div class="lesbox2">
+            <label for="date-de-naissance"></label>
+            <input type="datetime-local" name="rdv" id="date-de-naissance" onfocus="this.showPicker()">
+          </div>
+
+          <div class="lesbox2 passager-box">
+            <label for="passager"></label>
+            <select id="passager">
+                <option selected>Passager</option>
+                <option value="1">Bébé (0 - 23 mois)</option>
+                <option value="2">Enfant (2 - 11 ans inclus)</option>
+                <option value="3">Jeune (12 - 17 ans)</option>
+                <option value="1">Jeune (18 - 24 ans)</option>
+                <option value="2">Etudiant (18 - 29 ans)</option>
+                <option value="3">Adulte</option>
+                <option value="3">Senior (65 ans er plus)</option>
+            <label for="nombre-passagers">Nombre :</label>
+            <input type="number" id="nombre-passagers" min="1" max="6" value="1">
+            <button id="ajouter">+</button>
+            <button id="boutonmenudéroulant"></button>
+          </div>
+
+          <div class="lesbox2">
+            <label for="classe"></label>
+            <select>
+              <option selected>Économy</option>
+              <option value="1">Premium</option>
+              <option value="2">Business</option>
+              <option value="3">La Première</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Bouton de recherche -->
+        <div class="row justify-end">
+          <div class="lesbox3 separator">
+            <button>Rechercher les vols</button>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <div class="menuquiafficher" id="boxmenu" >
+      <h2>Vos Billets</h2>
+    </div>
+  </main>
+</body>
+<script>
+
+const texte = document.getElementById('boxmenu');
+const bouton = document.getElementById('boutonmenudéroulant');
+
+bouton.onclick = () => {
+  if (texte.style.visibility === 'hidden') {
+    texte.style.visibility = 'visible';
+  } else {
+    texte.style.visibility = 'hidden';
+  }
+};
+
+const boxmenu = document.getElementById('boxmenu');
+const btnAjouter = document.getElementById('ajouter');
+
+btnAjouter.onclick = () => {
+  const passager = document.getElementById('passager').selectedOptions[0].text;
+  const nombre = document.getElementById('nombre-passagers').value;
+
+  const nouvelleInfo = document.createElement('div');
+  nouvelleInfo.className = 'info';
+  nouvelleInfo.innerHTML = `
+  <div class="ligne-info">
+    <span>${passager}</span>
+    <span>x ${nombre}</span>
+  </div>
+  <button class="supprimer">-</button>
+`;
+
+
+  boxmenu.appendChild(nouvelleInfo);
+
+  nouvelleInfo.querySelector('.supprimer').onclick = () => {
+    nouvelleInfo.remove();
+  };
+};
+</script>
+</html>

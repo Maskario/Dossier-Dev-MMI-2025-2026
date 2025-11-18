@@ -1,0 +1,28 @@
+table{
+    width: 100%;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+tbody th, td {
+    border: 1px solid lightgray;
+}
+
+thead{
+    background-color: lightgray;
+
+}
+
+tbody th {
+    background-color: cornflowerblue;
+}
+
+tfoot{
+    border: 2px solid black;
+    border-collapse: collapse;
+
+}
+
+tfoot th{
+    border: 1px solid lightgray;
+}

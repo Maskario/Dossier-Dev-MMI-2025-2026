@@ -1,0 +1,294 @@
+﻿body
+{
+  background: #eeeeee;
+  font-family: "Sintony", sans-serif;
+
+}
+
+
+
+hr{
+    background-color: black;
+    height: 1px;
+}
+
+main{
+    width: 900px;
+    margin: auto;
+}
+
+#zonecentrale
+{
+    background: #EEE;
+	
+}
+
+
+header
+{
+    display: flex;
+}
+
+#titre_principal
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+
+.imagename{
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    
+}
+
+.navlink{
+    display: flex;
+    list-style-type: none;
+    margin-block-start: none;
+    margin-block-end: none;
+    padding-inline-start: none;
+    margin-bottom: 0;
+}
+
+nav
+{
+   width:  596px;
+   margin-left: 12px;
+   display: flex;
+   align-items: end;
+   justify-content: end;
+}
+
+.ressources{
+    text-decoration: none;
+    color: black;
+    margin-left: 15px;
+    font-size: 21px;
+}
+
+.ressources:hover {
+    color: #A33;
+    text-decoration: underline #a33;
+    text-underline-offset: 8px;
+}
+
+h1{
+    margin: 0;
+    font-family: "Damion", cursive;
+    position: relative;
+    left: 5px;
+    top: 10px;
+}
+
+.textlogo{
+    margin: 0;
+    margin-top: 5px;
+    font-size: 21px;
+}
+
+#banniere_image{
+    height: 200px;
+	background-color:#E59;
+    margin-bottom: 12px;
+    position: relative;
+    background-image: url(images/batiment.jpg);
+    background-size: cover;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px;
+}
+
+#banniere_description
+{
+    height: 33px;
+    background-color: rgba(24,24,24,0.8);
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 900px;
+    height: 55px;
+    border-radius: 0px 0px 5px 5px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.textbanniere{
+    margin-left: 5px;
+}
+
+
+
+section{
+    /*display: flex;
+    flex-direction: row-reverse;*/
+    position: relative;
+}
+
+.Loremipsum{
+    font-size: 12px;
+}
+
+
+aside
+{
+    background-color: #706b64;
+    height: 500px;
+    width: 292px;
+    position: relative;
+    left: 608px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px;
+}
+
+
+
+.bulleaside{
+    position: absolute;
+    top: 100px;
+    left: -12px;
+
+}
+
+.lesdeuximagesaside{
+    display: grid;
+    justify-content: center;
+
+}
+
+
+.titreaside{
+    text-transform: uppercase;
+    color: white;
+    padding-left: 10px;
+    padding-top: 10px;
+    
+}
+
+.textaside{
+    margin-top: 5px;
+    font-size: 11px;
+    color: white;
+    padding-left: 10px;
+    margin-bottom: 0;
+    
+}
+
+.iconsresaux{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    
+}
+
+article
+{
+	height: 500px;
+    width: 596px;
+    position: absolute;
+    bottom: 0px;
+}
+
+.titrearticle{
+    text-transform: uppercase;
+}
+
+
+footer
+{
+   background-color:#DDD;
+   display: flex;
+}
+
+
+#tweet
+{
+	height:125px;
+    width: 292px;
+    margin-right: 12px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px;
+    
+}
+
+
+.mestweetAndtext{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.tweettext{
+    text-transform: uppercase;
+}
+
+.Mestweet{
+    font-size: 11px
+}
+
+#mes_photos
+{
+	height:125px;
+    width: 292px;
+    margin-right: 12px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px;
+}
+
+.mesphotoAndtext{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.textphotos{
+    text-transform: uppercase;
+}
+
+.photos{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.imagephoto{
+    border: solid black;
+    border-width: 1px;
+    width: 55px;
+}
+
+#mes_liens
+{
+	height:125px;
+    width: 292px;
+	border-radius: 5px;
+    box-shadow: 0px 2px 4px;
+
+}
+
+.mesliensoAndtext{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.lienressource{
+    text-decoration: none;
+    color: #A33;
+    text-underline-offset: none;
+}
+
+.textlien{
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.ullienressource{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    padding-inline-start: 40px;
+    margin: 0;
+}

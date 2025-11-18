@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="documentation.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Gorditas:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="cursor__ball cursor__ball--big">
+        <svg height="50" width="50">
+            <circle cx="25" cy="25" r="20" stroke-width="0"></circle>
+        </svg>
+    </div>
+    <header>
+        <div class="headerposition">
+            <div class="logo_and_text">
+                <img src="images/logotest.svg" alt="image" class="logo">
+                <h1 class="text_du_logo">BlockYourPage</h1>
+            </div>
+            <nav class="les_autres_pages">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="documentation.html" class="active1">Documentation</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li>
+                        <button class="button_dark_mode" id="theme-switch">
+                            <img src="images/Dark_mode.svg" alt="button_dark_mode" class="iconbutton_darkmode">
+                            <img src="images/Ligth_mode.svg" alt="button_ligth_mode" class="iconbutton_darkmode">
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <img src="images/bas1.svg" alt="bas1" class="bas1-light">
+    <img src="images/bas1_white.svg" alt="bas1_white" class="bas1-dark">
+    
+    <main>
+        <section class="section-3">
+            <p>
+
+            </p>
+        </section>
+
+        <section class="section-4">
+            <p>
+
+            </p>
+        </section>
+
+        <section class="section-5">
+            <p>
+
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p class="textfooter">
+
+        </p>
+    </footer>
+</body>
+
+
+<script>
+
+    const bigBall = document.querySelector('.cursor__ball--big');
+
+    document.body.addEventListener('mousemove', onMouseMove);
+
+    function onMouseMove(e) {
+        gsap.to(bigBall, {
+            duration: 0.2,
+            x: e.clientX - 25,
+            y: e.clientY - 25
+        });
+    }
+
+    // Animation au clic
+    document.body.addEventListener('mousedown', onMouseDown);
+    document.body.addEventListener('mouseup', onMouseUp);
+
+    // Variable pour sauvegarder l'animation
+    let pulseAnimation;
+
+    // Sauvegarde l'animation de pulsation
+    pulseAnimation = gsap.to(bigBall, {
+        scale: 0.9,
+        duration: 0.5,
+        repeat: -1,
+        yoyo: true,
+        ease: "power1.inOut"
+    });
+
+    function onMouseDown() {
+        pulseAnimation.pause();  // Met en pause la pulsation
+        gsap.to(bigBall, {
+            duration: 0.2,
+            scale: 1.5  // Gonfle au clic
+        });
+    }
+
+    function onMouseUp() {
+        gsap.to(bigBall, {
+            duration: 0.3,
+            scale: 1,  // Revient à la taille normale
+            onComplete: () => {
+                pulseAnimation.play();  // Relance la pulsation
+            }
+        });
+    }
+
+
+        // pour changer de thème light à dark et inversement
+    let darkmode = localStorage.getItem('darkmode')
+    const themeswitch = document.getElementById('theme-switch')
+
+    const enableDarkmode = () => {
+        document.body.classList.add('darkmode')
+        localStorage.setItem('darkmode', 'active')
+    }
+
+    const disableDarkmode = () => {
+        document.body.classList.remove('darkmode')
+        localStorage.setItem('darkmode', null)
+    }
+
+    if(darkmode === "active") enableDarkmode()
+
+    themeswitch.addEventListener("click", () =>{
+        darkmode = localStorage.getItem('darkmode')
+        darkmode !== "active" ? enableDarkmode() : disableDarkmode()
+    })
+
+</script>
+
+</html>

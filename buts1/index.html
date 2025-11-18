@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header id="top" class="text-light d-flex align-items-center" style="height: 100vh; position: relative;">
+    <img id="araigner" src="mestravaux/imagehalloween/araigner.png" alt="Araignée Halloween">
+    <img id="squelette2" src="mestravaux/imagehalloween/squelette2.png" alt="Squelette 2 Halloween">
+    <div style="position: fixed; bottom: 20px; left: 20px; z-index: 1;">
+      <button class="bouton_top btn btn-primary btn-lg me-2" id="playPauseBtn"><i class="bi bi-play-fill"></i></button>
+    </div>
+
+    <div class="container">
+      <div class="row align-items-center">
+        
+        <div class="col-md-5 text-center position-relative">
+          <img src="mestravaux/image/Maskariopp.png" id="Photodeprofil" alt="Photo de profil" class="rounded-circle mb-3" style="width: 300px; height: 300px; object-fit: cover;">
+          <img id="contouros" src="mestravaux/imagehalloween/contouros.png" alt="Contour os décoratif">
+          <h1>Bienvenue sur mon portfolio</h1>
+        </div>
+
+        <div class="col-md-7 d-flex flex-column justify-content-center">
+          <div class="Text_Titre">
+            <h2>À propos de moi</h2>
+            <p>
+              Je suis un développeur web débutant passionné, avec un grand intérêt pour la création<br/>de sites et d'applications web.<br/>
+              J'adore explorer de nouvelles technologies et élargir mes connaissances.
+            </p>
+          </div>
+          <div class="mt-3">
+            <a href="#Mini_projets" class="bouton_top btn btn-primary btn-lg me-2">Projets</a>
+            <a href="#Gros_projet" class="bouton_top btn btn-primary btn-lg me-2">Gros projet</a>
+            <a href="https://github.com/Maskario" target="_blank" style="color: #3E75C3;">
+              <!-- GitHub Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+    <div id="Mini_projets"></div>
+    <main role="main" class="text-light pt-5 position-relative">
+      <img id="fantôme" src="mestravaux/imagehalloween/fantome.png" alt="Fantôme Halloween">
+      <img id="squelette" src="mestravaux/imagehalloween/squelette.png" alt="Squelette Halloween">
+      <img id="citrouille" src="mestravaux/imagehalloween/citrouille.png" alt="Citrouille Halloween">
+
+      <section id="projects">
+        <div class="container">
+          
+          <div class="titre_miniprojet mt-auto text-center">
+            <h2>Exercices de TD et TP</h2>
+            <p>Une collection d'exercices réalisé pedant la 1er année de MMI</p>
+          </div>
+          
+          <div class="row g-3 mb-3 justify-content-center">
+            <div class="col-sm-4">
+              <div class="card shadow text-light text-center equal-height">
+                <div class="card-body">
+                  <h5 class="card-title">R112</h5>
+                  <p class="card-text">Intégration</p>
+                  <a href="travaux/r112/index.html" class="bouton_milieu btn btn-primary btn-lg">Afficher</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card shadow text-light text-center equal-height">
+                <div class="card-body">
+                  <h5 class="card-title">R113</h5>
+                  <p class="card-text">Développement Web</p>
+                  <a href="travaux/r113/index.html" class="bouton_milieu btn btn-primary btn-lg">Afficher</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row g-3 mb-3 justify-content-center">
+            <div class="col-sm-4">
+              <div class="card shadow text-light text-center equal-height">
+                <div class="card-body">
+                  <h5 class="card-title">R103</h5>
+                  <p class="card-text">Ergonomie et Accessibilité</p>
+                  <a href="travaux/r103/index.html" class="bouton_milieu btn btn-primary btn-lg">Afficher</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card shadow text-light text-center equal-height">
+                <div class="card-body">
+                  <h5 class="card-title">Vide</h5>
+                  <p class="card-text">...</p>
+                  <a href="#Mini_projets" class="bouton_milieu btn btn-primary btn-lg">Afficher</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="titre_miniprojet mt-auto text-center">
+            <h2>Mes Projet</h2>
+            <p>Une collection de petits projets de codage pour expérimenter et apprendre.</p>
+          </div>
+          
+          <div class="row g-3 mb-3 justify-content-center">
+            <div class="col-sm-4">
+              <div class="card shadow text-light text-center equal-height">
+                <div class="card-body">
+                  <h5 class="card-title">Calculatrice</h5>
+                  <p class="card-text">Calculatrice réalisée avec Bootstrap + JavaScript</p>
+                  <a href="mestravaux/index.calculatrice.html" class="bouton_milieu btn btn-primary btn-lg">Afficher</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card shadow text-light text-center equal-height">
+                <div class="card-body">
+                  <h5 class="card-title">Calculateur de remise</h5>
+                  <p class="card-text">Calculateur de remise réalisé avec Bootstrap + JavaScript</p>
+                  <a href="mestravaux/indexCalculateurderemise.html" class="bouton_milieu btn btn-primary btn-lg">Afficher</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row g-3 mb-3 justify-content-center">
+            <div class="col-sm-4">
+              <div class="card shadow text-light text-center equal-height">
+                <div class="card-body">
+                  <h5 class="card-title">Jeu du plus ou moins</h5>
+                  <p class="card-text">Un petit jeu pour deviner un nombre, fait avec Bootstrap + JavaScript</p>
+                  <a href="mestravaux/indexJeu+-.html" class="bouton_milieu btn btn-primary btn-lg">Afficher</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card shadow text-light text-center equal-height">
+                <div class="card-body">
+                  <h5 class="card-title">Liste dynamique</h5>
+                  <p class="card-text">Une liste dynamique faite avec Bootstrap + JavaScript</p>
+                  <a href="mestravaux/indexlistedynamique.html" class="bouton_milieu btn btn-primary btn-lg">Afficher</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row g-3 justify-content-center">
+            <div class="col-sm-4">
+              <div class="card shadow text-light text-center equal-height">
+                <div class="card-body">
+                  <h5 class="card-title">Compteur de clics</h5>
+                  <p class="card-text">Un petit compteur de clics réalisé avec Bootstrap + JavaScript</p>
+                  <a href="mestravaux/indexCompteurdeclics.html" class="bouton_milieu btn btn-primary btn-lg">Afficher</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card shadow text-light text-center equal-height">
+                <div class="card-body">
+                  <h5 class="card-title">Changeur de couleur d’arrière-plan</h5>
+                  <p class="card-text">Permet de changer la couleur de fond avec Bootstrap + JavaScript</p>
+                  <a href="mestravaux/indexchangerdecouleur.html" class="bouton_milieu btn btn-primary btn-lg">Afficher</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="d-flex flex-column text-light" style="height: 800px; padding-top: 90px;">
+      <img id="épouvantail" src="mestravaux/imagehalloween/epouvantail.png" alt="Épouvantail Halloween">
+
+      <div id="Gros_projet"></div>
+      <div class="titre_grosprojet mt-auto text-center">
+        <h2>Gros projet</h2>
+        <p>Projet réalisé lors de ma formation « Découverte et parcours vers les métiers du numérique ».</p>
+      </div>
+      <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+        <div class="boxfooter rounded-4 shadow" style="width: 65%; height: 500px; display: flex; flex-direction: column; justify-content: center;">
+          <div>
+            <p class="titreBoxgrosprojet mt-auto text-center pt-2" style="font-size: x-large;">Site web du Comité du Secours Populaire<br> de Romilly-sur-Seine réalisé avec WordPress</p>
+            <div class="d-flex justify-content-center">
+              <img src="mestravaux/image/Secours_populaire_logo.svg.png" alt="Logo du gros projet" class="rounded-circle mb-3" style="width: 200px; height: 200px; object-fit: cover;">
+            </div>
+            <div class="d-flex justify-content-center">
+              <a href="http://localhost/wordpress/wordpress/" target="_blank" class="bouton_milieu btn btn-primary btn-lg">Afficher le site en local</a>
+            </div>
+          </div>
+        </div>
+      </div>      
+      <p class="Copyrightbottom mt-auto text-center pt-4">
+        2024 par Maskario. Tous droits réservés.
+      </p>
+    </footer> 
+    <a href="#top" id="backToTop" class="position-fixed bottom-0 end-0 m-4 text-white bg-transparent border-0 fs-3" style="box-shadow: none; outline: none; display: none;">
+      <i class="flèche bi bi-arrow-up"></i>
+    </a>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-mQ93Vh8DyuMG5S2U0pCBJ1Q6YDC7F4TxvMQD2T6BD2BohZef3u6uRek3ZJzv8zmD" crossorigin="anonymous"></script>
+<script>
+  const backToTopBtn = document.getElementById("backToTop");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 200) {
+      backToTopBtn.style.display = "block";
+    } else {
+      backToTopBtn.style.display = "none";
+    }
+  });
+
+  window.addEventListener('DOMContentLoaded', () => {
+    const couleur = localStorage.getItem('couleurTheme') || 'originale';
+    const texte = localStorage.getItem('textColor') || 'black';
+
+    const header = document.getElementById('top');
+    const footer = document.querySelector('footer');
+    const main = document.querySelector('main');
+
+    // Met à jour l'image du header
+    if (header) {
+        const headerImage = `mestravaux/image/Couleur ${couleur}.svg`;
+        header.style.background = `url('${headerImage}') no-repeat center center / cover`;
+    }
+
+    // Met à jour l'image du footer (version reverse)
+    if (footer) {
+        const footerImage = `mestravaux/image/Couleur ${couleur}reverse.svg`;
+        footer.style.background = `url('${footerImage}') no-repeat center center/ cover`;
+    }
+
+    if (main) {
+
+        let mainBgColor = 'transparent';
+        switch (couleur) {
+            case 'bleu': mainBgColor = '#003366'; break;
+            case 'rouge': mainBgColor = '#8A0100'; break;
+            case 'vert': mainBgColor = '#155A33'; break;
+            case 'gris': mainBgColor = '#D2D3D2'; break;
+            case 'cyan': mainBgColor = '#E1FFFE'; break;
+            case 'jaune': mainBgColor = '#D4A301'; break;
+            case 'noir': mainBgColor = '#010100'; break;
+            case 'blanc': mainBgColor = '#F4F4F5'; break;
+            case 'originale': mainBgColor = '#223047'; break; // couleur original
+            default: mainBgColor = 'linear-gradient(#8f1903,#850e00)'; // couleur pour halloween
+        }
+
+        main.style.background = mainBgColor;
+    }
+  });
+
+  document.addEventListener('DOMContentLoaded', () => {
+  const couleur = localStorage.getItem('couleurTheme') || 'originale';
+  
+  const body = document.body;
+  body.classList.add(`theme-${couleur}`);
+  document.body.classList.toggle('theme-halloween', couleur === 'halloween'); // Afficher les déco seulement pour halloween
+  });
+
+  document.addEventListener('DOMContentLoaded', () => {
+  const couleur = localStorage.getItem('couleurTheme') || 'originale';
+
+  const playPauseBtn = document.getElementById('playPauseBtn');
+
+    // Afficher le bouton musique uniquement si le thème est "halloween"
+    if (playPauseBtn) {
+        if (couleur === 'halloween') {
+            playPauseBtn.style.display = 'block'; // affiche le bouton
+        } else {
+            playPauseBtn.style.display = 'none'; // cache le bouton 
+        }
+    }
+  });
+  
+// bouton musique 
+const playPauseBtn = document.getElementById('playPauseBtn');
+let audio = new Audio('mestravaux/audiohalloween/Spooky Scary Skeletons.mp3');
+audio.loop = true;
+audio.volume = 0.009; // volume très faible pour ne pas faire du mal aux oreilles :)
+let isPlaying = false;
+
+playPauseBtn.addEventListener('click', () => {
+    if (isPlaying) {
+        audio.pause();
+        playPauseBtn.innerHTML = '<i class="bi bi-play-fill"></i>';
+    } else {
+        audio.play();
+        playPauseBtn.innerHTML = '<i class="bi bi-pause-fill"></i>';
+    }
+    isPlaying = !isPlaying;
+});
+</script>
+
+
+
+</html>

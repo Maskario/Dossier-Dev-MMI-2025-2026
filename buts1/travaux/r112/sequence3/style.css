@@ -1,0 +1,97 @@
+.version1body {
+  background-image: url(images/fond.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+
+}
+
+h1 {
+  text-align: center;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+#container {
+  background-color: #211b224a; /* A commenter plus tard */
+  height: 450px;
+  width: 350px;
+  margin: auto;
+}
+#corps {
+  z-index: 2; /*  Le z-index: 1 est celui notre container */
+  position: relative;
+  height: 65%;
+  width: 50%;
+  background-color:  rgb(224, 141, 77);
+  top: 75px;
+  left: 85px;
+  border-radius: 42%;
+  border: 6px solid black;
+}
+
+
+
+
+#brows{
+  position: relative;
+  top: 20px;
+  left: 25px;
+}
+
+#eyes{
+  position: relative;
+  top: 10px;
+  left: 35px;
+}
+
+#feet{
+  position: relative;
+  top: 150px;
+  right: 24px;
+}
+
+#hat{
+  position: relative;
+  bottom: 218px;
+  right: 4px;
+  z-index: 3;
+}
+
+#leftear{
+  position: relative;
+  left: 165px;
+  bottom: 220px;
+}
+
+#rightear{
+  position: relative;
+  right: 40px;
+  bottom: 500px;
+}
+
+#nose{
+  position: relative;
+  bottom: 290px;
+  left: 20px;
+}
+
+#righthand{
+  position: relative;
+  bottom: 385px;
+  right: 118px;
+}
+
+#lefthand{
+  position: relative;
+  bottom: 690px;
+  left: 122px;
+
+}
+
+
+

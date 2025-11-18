@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <label for="prenom">Votre Prénom et votre age :</label><br>
+        <input type="text" name="prenom" placeholder="Prénom" id="prenom">
+        <label for="age"></label><br>
+        <input type="number" name="age" min="0" max="120" placeholder="age" id="age"><br><br>
+
+        <label for="email">Votre email :</label><br>
+        <input type="email" name="email" placeholder="exemple@mail.com" id="email"><br><br>
+
+        <label for="password">Votre mots de passe :</label><br>
+        <input type="password" name="password" placeholder="" id="password"><br><br>
+
+        <label for="numéro de téléphone">Votre numéro de téléphone :</label><br>
+        <input type="tel" name="telephone" placeholder="" id="numéro de téléphone"><br><br>
+
+        <label for="numéro de téléphone">Votre Site internet :</label><br>
+        <input type="url" name="site" placeholder="https://votresite.com" id="numéro de téléphone"><br><br>
+
+        <label for="date de naissance">Votre date de naissance</label><br>
+        <input type="date" name="naissance" id="date de naissance">
+        <input type="time" name="heure" id="date de naissance">
+        <input type="datetime-local" name="rdv" id="date de naissance"><br><br>
+
+        <label for="newletters"></label><br>
+        <input type="checkbox" id="newsletter" name="newsletter" id="newletters">
+        <label for="newsletter">Recevoir la newsletter</label><br><br>
+
+        <p>Votre niveau :</p>
+        <input type="radio" id="debutant" name="niveau" value="debutant">
+        <label for="debutant">Débutant</label>
+
+        <input type="radio" id="avance" name="niveau" value="avance">
+        <label for="avance">Avancé</label><br><br>
+
+        <label for="pays">Votre pays :</label>
+        <select name="pays" id="pays">
+            <option value="fr">France</option>
+            <option value="be">Belgique</option>
+            <option value="ch">Suisse</option>
+        </select><br><br>
+
+        <label for="langues">Langues parlées :</label><br>
+        <select name="langues" id="langues" multiple>
+            <option value="fr">Français</option>
+            <option value="en">Anglais</option>
+            <option value="es">Espagnol</option>
+            <option value="de">Allemand</option>
+        </select><br><br>
+
+        <label for="message">Votre message :</label><br>
+        <textarea id="message" name="message" rows="4" cols="30" placeholder="Écrivez votre message..."></textarea><br><br>
+
+        <label for="cv">Votre CV :</label>
+        <input type="file" id="cv" name="cv"><br><br>
+        
+        <label for="color"></label>
+        <input type="color" name="couleur" value="#ff0000" id="color">
+        <label for="reset"></label>
+        <input type="reset" value="Réinitialiser" id="reset">
+        <label for="button"></label>
+        <input type="button" value="Cliquez ici" id="button">
+        <label for="submit"></label>
+        <button type="submit" id="submit">Envoyer</button>
+    </div>
+
+
+    
+</body>
+</html>

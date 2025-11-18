@@ -1,0 +1,82 @@
+.theme-originale .boutoncolor{
+    background-color: #283F5D; 
+    border: 3px solid #223047;
+    color: white;
+}
+
+.theme-bleu .boutoncolor{
+    background-color: #85B6CC;
+    border: 3px solid #003366;
+    color: white;
+}
+
+
+.theme-gris .boutoncolor{
+    background-color: #D2D3D2;
+    border: 3px solid #676666;
+    color: white;
+}
+
+
+.theme-vert .boutoncolor{
+    background-color: #8AC988;
+    border: 3px solid #155A33;
+    color: white;
+}
+
+
+.theme-rouge .boutoncolor{
+    background-color: #E8855E; 
+    border: 3px solid #8A0100;
+    color: white;
+}
+
+
+.theme-jaune .boutoncolor{
+    background-color: #F7D457;
+    border: 3px solid #D4A301;
+    color: white; 
+}
+
+
+.theme-cyan .boutoncolor{
+    background-color: #96D1D0;
+    border: 3px solid #48A3A0;
+    color: #2C2C2C;
+}
+.theme-cyan .titre{
+    color: #2C2C2C;
+}
+
+.theme-blanc .boutoncolor{
+    background-color: #E7E7E6;
+    border: 3px solid #CFCFCF;
+    color: #2C2C2C;
+}
+.theme-blanc .titre{
+    color: #2C2C2C;
+}
+
+.theme-blanc .flèche{
+    color: #2C2C2C;
+  }
+
+.theme-noir .boutoncolor{
+    background-color: #262726;
+    border : 3px solid white;
+    color: white;
+}
+
+.theme-noir .titre{
+    color: white;
+}
+
+
+.theme-halloween .boutoncolor{
+      background-color:#2E2E2E;
+      border: 3px solid #1F1F25;
+      color: white ;
+}
+.theme-halloween .titre{
+    color: white;
+}

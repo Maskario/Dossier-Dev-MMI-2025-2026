@@ -1,0 +1,326 @@
+/* ==================== BASE DU SITE ==================== */
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  background: #0A3D62;
+  margin: 0;
+  font-family: 'B612', sans-serif;
+  font-size: 16px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  background-color: #f9f9f9;
+}
+
+/* ==================== IMAGE D'EN-TÊTE ==================== */
+.imagehotesse {
+  display: flex;
+  justify-content: center;
+}
+
+.imagehotesse img {
+  width: 100%;
+}
+
+/* ==================== BARRE DE NAVIGATION ==================== */
+
+.inputtopbar{
+  background-color: #0E5186;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: 0.2s;
+  width: 1px;
+}
+
+.inputtopbar:focus{
+  background-color: #0E5186;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: 0.2s;
+  width: 150px;
+}
+
+.inputtopbar:hover {
+    background-color:  #0A3D62;
+    border: #0E5186 2px solid;
+}
+
+.buttontopbar {
+  background-color: #0E5186;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.buttontopbar:hover {
+  background-color:  #0A3D62;
+  border: #0E5186 2px solid;
+}
+
+.topnav0{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+
+.topnav {
+  background-color: #0A3D62;
+  overflow: hidden;
+}
+
+
+.topnav a {
+  float: left;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  width: 200px;
+}
+
+.topnav a:hover {
+  background-color: #0E5186;
+  color: #FFFFFF;
+}
+
+.topnav a.active {
+  background-color: #0E5186;
+  color: #FFFFFF;
+}
+
+h1 {
+  color: #FFFFFF;
+  height: 35px;
+  margin: 0;
+  padding: 10px;
+}
+
+/* Logo à gauche avec icône */
+#logoexemple {
+  background-image: url('images/plane-globe.svg');
+  background-repeat: no-repeat;
+  background-position: left 170px center;
+  background-size: 30px;
+  padding-right: 60px;
+}
+
+#search{
+  background-image: url('images/search.svg');
+  background-repeat: no-repeat;
+  background-position: left 50px center;
+  background-size: 20px;
+  padding-right: 60px;
+}
+
+#search:focus{
+  background-image: url('images/search.svg');
+  background-repeat: no-repeat;
+  background-position: left 195px center;
+  background-size: 20px;
+  padding-right: 60px;
+}
+
+/* ==================== FORMULAIRE PRINCIPAL ==================== */
+.formulaire {
+  width: 100%;
+  max-width: 1200px;
+  position: absolute;
+  bottom: 20px;
+}
+
+/* Haut du bloc ("Acheter un billet") */
+.top {
+  background-color: #fff;
+  width: 20%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px 10px 0px 0px;
+  font-weight: bold;
+}
+
+/* Bas du bloc (formulaire réel) */
+.bottom {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 0px 10px 10px 10px;
+  box-shadow: 0px 2px 3px white;
+}
+
+/* ==================== STRUCTURE DES LIGNES ==================== */
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.lesbox2, .lesbox3 {
+  flex: 1;
+}
+
+.lesbox2:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease;
+}
+
+/* ==================== INPUTS ET SELECTS ==================== */
+select,
+input[type="datetime-local"],
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+/* Icônes ticket */
+#ticket{
+  background-image: url('images/ticket-airline.svg');
+  background-repeat: no-repeat;
+  background-position: right 0px center;
+  background-size: 30px;
+  padding-right: 40px;
+}
+
+#boutonmenudéroulant{
+  background-image: url('images/settings-sliders.svg');
+  background-repeat: no-repeat;
+  background-position: left 10px  center;
+  background-size: 30px;
+  padding-right: 30px;
+}
+
+.menuquiafficher{
+  position: absolute;
+  background-color: white;
+  width: 800px;
+  height: 300px;
+  bottom: 165px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.info{
+  width: 80%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.ligne-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+}
+
+
+/* Icônes dans les inputs départ / arrivée */
+input#depart {
+  background-image: url('images/départavion.svg');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 20px;
+  padding-right: 40px;
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+input#arrivee {
+  background-image: url('images/arrivéavion.svg');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 20px;
+  padding-right: 40px;
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+/* ==================== PASSAGER + NOMBRE ==================== */
+.passager-box {
+  display: flex;
+  gap: 10px;
+}
+
+#nombre-passagers {
+  width: 80px;
+}
+
+/* ==================== BOUTON ==================== */
+button {
+  background-color: #0A3D62;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: #0E5186;
+}
+
+/* ==================== AUTRES ==================== */
+.justify-end {
+  justify-content: flex-end;
+}
+
+.separator {
+  text-align: right;
+  font-weight: bold;
+}
+
+p {
+  font-weight: bold;
+  margin: 0;
+}

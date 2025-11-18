@@ -1,0 +1,89 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compteur de clics</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styleCompteurdeclics.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="vh-100 d-flex justify-content-center align-items-center">
+    <header id="top">
+        <div class="d-flex flex-column justify-content-center align-items-center vh-100 text-light">
+            <h1>Compteur de clics</h1>
+            <button type="button" class="boutoncolor btn btn-lg px-5 py-2 fs-1" onclick="incrementer()" id="compteur">0</button>
+        </div>
+        <a href="../index.html#MiniProjet" id="backToTop" class="position-fixed top-0 start-0 m-4 text-white bg-transparent border-0 fs-3" style="box-shadow: none; outline: none;">
+            <i class="flèche bi bi-arrow-left"></i>
+        </a>
+    </header>
+    <div id="messageDiv" class="d-none" style="position: absolute; top: 30%; background: rgba(0, 0, 0, 0.7); color: white; padding: 20px; border-radius: 10px;">
+    </div>       
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+let count = 0;
+const easterEggMessage = document.getElementById("easterEggMessage");
+const easterEggText = document.getElementById("easterEggText");
+
+function incrementer() {
+    count++;
+    document.getElementById("compteur").textContent = count;
+
+    // Messages d'easter egg
+    const messageDiv = document.getElementById("messageDiv");
+    
+    if (count === 10) {
+        messageDiv.textContent = "C'est déjà 10 ? Tu es un champion du clic !";
+        messageDiv.classList.remove("d-none");
+    } else if (count === 25) {
+        messageDiv.textContent = "Wow, tu n'arrêtes jamais ! Tu veux peut-être un café ?";
+        messageDiv.classList.remove("d-none");
+    } else if (count === 50) {
+        messageDiv.textContent = "Félicitations ! Tu as atteint 50 clics, mais je suis curieux… Tu veux encore continuer ?";
+        messageDiv.classList.remove("d-none");
+    } else if (count === 100) {
+        messageDiv.textContent = "100 clics ! Si ça continue, on va devoir te donner une médaille.";
+        messageDiv.classList.remove("d-none");
+    } else if (count === 150) {
+        messageDiv.textContent = "Tu as atteint 150 clics ! Tu deviens une légende.";
+        messageDiv.classList.remove("d-none");
+    } else if (count === 250) {
+        messageDiv.textContent = "250 clics... T'as vraiment de la volonté ! Tu veux un cookie maintenant ?";
+        messageDiv.classList.remove("d-none");
+    } else if (count === 500) {
+        messageDiv.textContent = "500 clics ! T'es sérieux là ? C'est du grand art !";
+        messageDiv.classList.remove("d-none");
+    } else if (count === 1000) {
+        messageDiv.textContent = "1000 clics ! Ok, là tu es officiellement un pro.";
+        messageDiv.classList.remove("d-none");
+    } else if (count === 5000) {
+        messageDiv.textContent = "5000 clics, tu es un véritable héros des clics. Chapeau bas !";
+        messageDiv.classList.remove("d-none");
+    } else if (count === 10000) {
+        messageDiv.textContent = "Tu as cliqué 10 000 fois... Bon, là c'est limite inquiétant, tu veux un break ? ";
+        messageDiv.classList.remove("d-none");
+    }
+}
+
+function showEasterEgg() {
+    easterEggMessage.classList.add("show");
+    setTimeout(() => {
+        easterEggMessage.classList.remove("show");
+    }, 3000); // Disparition après 3 secondes
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+    const couleur = localStorage.getItem('couleurTheme') || 'originale';
+    
+    // Ajoute la classe au body pour activer le thème dans le CSS
+    document.body.classList.add(`theme-${couleur}`);
+
+    // Optionnel : image de fond dynamique (si tu en veux une aussi)
+    const bodyImage = `image/Couleur ${couleur}.svg`;
+    document.body.style.background = `url('${bodyImage}') no-repeat center center / cover`;
+});
+
+</script>
+</html> 
