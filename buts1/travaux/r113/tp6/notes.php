@@ -13,12 +13,12 @@ $message = sayHello($firstname, $lastname);
 echo $message;
 
 
-$notes = [12,13,14]
+$notes = [12,13,14];
 
 function calculMoyenne($notes = []){
     $nbNotes = count($notes);
     $somme = 0;
-    foreach ()
+    foreach ();
 }
 
 

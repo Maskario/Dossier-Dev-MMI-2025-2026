@@ -72,6 +72,7 @@ $tableau = [
     'Méric',
     'Aylan',
     'Jimmy',
+    'tzuyu',
 ];
 
 // j'ajoute un element en plus dans le tableau
@@ -89,6 +90,7 @@ foreach($tableau as $ligne){
     echo $ligne.'<br>';
 }
 
+echo '<br>';
 
 // utilisation de tableau cle (key) / valeur (value)
 // la clé ne doit pas jamais contenir d'èspace ou de caractères spéciaux
@@ -121,7 +123,7 @@ foreach($children as $ligne){
     
 
 
-
+echo '___________________________________________________________________________________'
 
 
 
