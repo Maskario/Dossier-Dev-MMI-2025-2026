@@ -12,6 +12,7 @@ echo "En $tabmois[0], $tabmois[1], $tabmois[2], j'ai acheté des
  $tabvetements[0]s, des $tabvetements[1]s, des
  $tabvetements[2]s, et des $tabvetements[3]s.<br />\n";
 echo "Et de même en $tabmois[3], $tabmois[4], $tabmois[5].";
+
 // boucle simple
 echo "<br>\n<br>\n";
 
@@ -24,8 +25,10 @@ for ($i=0; $i<6; $i++){
  .$tab2D[$i][3].' '.$tabvetements[3].' pour le '.$saison[3].' ';
  echo "<br />\n";
  }; 
+
 // double boucle
 echo "<br />\n";
+
 echo "PARTIE 3 <br>\n";
 for ($i=0; $i<6; $i++)
  { echo "En $tabmois[$i], j'ai acheté ";
