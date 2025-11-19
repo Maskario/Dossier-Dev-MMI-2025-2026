@@ -1,7 +1,7 @@
 <?php
 $tabvetements = ['pantalon','tee-shirt','sweat','chemise'];
 $tabmois = ['janvier','fevrier','mars','avril','mai','juin'];
-$saison = ['automne','été','hiver','printemps',];
+$saison = ['automne','été','hiver','printemps'];
 $tab2D = [[1,2,10,1],[2,2,0,1],[3,2,0,1],[1,2,3,1],[1,2,0,1],
 [6,2,4,1]];
 // { part1end }
@@ -35,27 +35,18 @@ for ($i=0; $i<6; $i++)
  }
 echo "<br>\n";
 
-echo '___________________________________________________________________________________';
+echo '___________________________________________________________________________________<br>';
 
+$NomAge = [
+    'Romain' => 21,
+    'Méric' => 22,
+    'Aylan' => 20,
+    'Jimmy' => 23,
+    'Tzuyu' => 19,
+];
 
-echo "<br>\n <br>\n";
-echo "PARTIE 5 <br>\n";
-$tabAsso = [['mois'=>'janvier','pantalon'=>'1','teeshirt'=>'2','sweat'=>'10','chemise'=>1],
-['mois'=>'fevrier','pantalon'=>'2','teeshirt'=>'2','sweat'=>'0','chemise'=>1],
-['mois'=>'mars','pantalon'=>'3','teeshirt'=>'2','sweat'=>'0','chemise'=>1],
-['mois'=>'avril','pantalon'=>'1','teeshirt'=>'2','sweat'=>'3','chemise'=>1],
-['mois'=>'mai','pantalon'=>'1','teeshirt'=>'2','sweat'=>'0','chemise'=>1],
-['mois'=>'juin','pantalon'=>'6','teeshirt'=>'2','sweat'=>'4','chemise'=>1]];
-foreach ($tabAsso as $cle=>$val)
-{ echo "En ". $val['mois'].", j'ai acheté ".$val['pantalon']."
-pantalons, ".
- $val['tee-shirt']." tee shirts, ".$val['sweat']." sweats, ".
- $val['chemise']." chemises et j'en suis content. <br>\n"; }
-// mise au pluriel si plusieurs éléments
-function pluriel ($nbre, $habit)
- { if ($nbre>1) {$result = $habit.'s';}
- else {$result = $habit; }
- ; return $result;
- }
+foreach($NomAge as $nom => $age){
+    echo $nom.' a '.$age.' ans.<br>';
+}
 
 ?>

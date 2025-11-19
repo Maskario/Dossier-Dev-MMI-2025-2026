@@ -44,11 +44,6 @@ for ($i=100; $i >=10; $i-=10){
     echo $i.'<br>';
 }
 
-
-
-
-
-
 echo '<br>';
 
 echo 'Parti 2<br>';

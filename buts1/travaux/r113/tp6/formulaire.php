@@ -41,8 +41,8 @@ foreach($note as $key => $notesMatieres){
 
     echo 'Notes de la matière : '.$key.'<br>';
 
-    foreach($notesMatieres as $note){
-        echo $note.'/20<br>';
+    foreach($notesMatieres as $hamburger){
+        echo $hamburger.'/20<br>';
 
     }
     
