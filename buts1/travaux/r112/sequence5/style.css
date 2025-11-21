@@ -46,6 +46,15 @@ nav{
 
 }
 
+.listetext{
+    all: unset;
+    display: block;
+}
+
+.li_text{
+    text-transform: none;
+}
+
 ul{
     display: flex;
     flex-direction: row;
